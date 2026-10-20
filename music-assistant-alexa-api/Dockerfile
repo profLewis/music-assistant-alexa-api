@@ -3,8 +3,9 @@
 # 3.12 environment (with the verifier/certvalidator patches applied), ASK CLI,
 # the skill code and the assets. This layer adds the add-on runtime glue.
 # The tag+digest here and in build.yaml must stay identical — see AGENTS.md.
-ARG BUILD_FROM=ghcr.io/timlaing/music-assistant-skill:v1.4.1@sha256:395514e4310c110988ae73c28510ad49e0454148778bcea848c2a178fdf2758a
-FROM $BUILD_FROM
+# profLewis fork: the base is named directly (not via BUILD_FROM) - a local Supervisor build passes its own default
+# (Alpine) base as BUILD_FROM, which has none of the skill image's /app/venv, so the build failed at the pip step.
+FROM ghcr.io/timlaing/music-assistant-skill:v1.4.1@sha256:395514e4310c110988ae73c28510ad49e0454148778bcea848c2a178fdf2758a
 
 # Serve with gunicorn instead of the skill image's Flask dev server, using the
 # Home Assistant ingress log format from gunicorn.conf.py.
