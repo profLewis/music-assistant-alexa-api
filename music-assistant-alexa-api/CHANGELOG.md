@@ -1,3 +1,7 @@
+## 1.3.6-pl.2 (profLewis fork)
+- Skill fork 7b12aec: one stream per speaker (each mapped Echo gets its own player's stream); with `enable_apl: false`
+  a display left on a screen Echo no longer keeps the session open (no listening, no Alexa+ "say 'Alexa, exit'" line).
+
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
 ## 1.3.6
