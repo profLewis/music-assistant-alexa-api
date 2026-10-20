@@ -28,6 +28,22 @@ if [ -d "$IMPORT_DIR" ] && [ ! -f "$APP_SETTINGS_PATH" ]; then
 fi
 echo "[fork] skill code: $(cat /app/SKILL_REF 2>/dev/null || echo unknown)"
 
+# profLewis fork: the add-on's enable_apl option is applied at EVERY start (upstream copies options into the app's
+# settings only on the very first start, so changing it in Home Assistant afterwards did nothing).
+if [ -f /data/options.json ] && [ -f "$APP_SETTINGS_PATH" ]; then
+    /app/venv/bin/python - <<'PY' || echo "[fork] could not apply enable_apl"
+import json
+opts = json.load(open("/data/options.json"))
+if "enable_apl" in opts:
+    path = "/data/app-settings.json"
+    vals = json.load(open(path))
+    if vals.get("enable_apl") != bool(opts["enable_apl"]):
+        vals["enable_apl"] = bool(opts["enable_apl"])
+        json.dump(vals, open(path, "w"), indent=2)
+    print("[fork] enable_apl =", vals.get("enable_apl"))
+PY
+fi
+
 # The upstream application stores the current stream in memory, so it must run
 # as a single worker to keep push and playback requests consistent.
 exec /app/venv/bin/gunicorn --config /app/gunicorn.conf.py --workers 1 --worker-class gthread --threads 8 --access-logfile - --error-logfile - --capture-output app:app --chdir /app/src --bind "0.0.0.0:${PORT}" --bind "0.0.0.0:8099"

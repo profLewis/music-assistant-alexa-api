@@ -1,3 +1,6 @@
+## 1.3.6-pl.4 (profLewis fork)
+- The enable_apl option is applied at every start (upstream only reads options on the first start).
+
 ## 1.3.6-pl.3 (profLewis fork)
 - Builds on a Home Assistant Pi: the skill image is the fixed base (Supervisor's own Alpine base was being used).
 
