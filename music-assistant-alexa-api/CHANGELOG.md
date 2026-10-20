@@ -1,3 +1,6 @@
+## 1.3.6-pl.5 (profLewis fork)
+- Skill: Alexa's own player shows cover/title/artist (APL off = full screen, session closed - no listening); the skill's APL page is readable (dark scrim + blur, white text).
+
 ## 1.3.6-pl.4 (profLewis fork)
 - The enable_apl option is applied at every start (upstream only reads options on the first start).
 
