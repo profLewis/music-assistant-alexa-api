@@ -1,3 +1,6 @@
+## 1.3.6-pl.7 (profLewis fork)
+- The display-only page follows the song (cover + title re-loaded every 10 s; the session stays closed).
+
 ## 1.3.6-pl.6 (profLewis fork)
 - New option apl_display_only (default on): graphics with Alexa's player playing - the session closes, no listening.
 
