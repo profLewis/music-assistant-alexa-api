@@ -1,3 +1,6 @@
+## 1.3.6-pl.8 (profLewis fork)
+- Display-only page timer uses handleTick (keeps running after the session closes).
+
 ## 1.3.6-pl.7 (profLewis fork)
 - The display-only page follows the song (cover + title re-loaded every 10 s; the session stays closed).
 
