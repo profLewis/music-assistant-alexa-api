@@ -1,3 +1,6 @@
+## 1.3.6-pl.6 (profLewis fork)
+- New option apl_display_only (default on): graphics with Alexa's player playing - the session closes, no listening.
+
 ## 1.3.6-pl.5 (profLewis fork)
 - Skill: Alexa's own player shows cover/title/artist (APL off = full screen, session closed - no listening); the skill's APL page is readable (dark scrim + blur, white text).
 

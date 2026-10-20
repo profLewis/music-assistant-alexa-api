@@ -44,6 +44,12 @@ if "enable_apl" in opts:
 PY
 fi
 
+# profLewis fork: apl_display_only (default on) - with APL on, Alexa's player plays and the page is display-only, so
+# the skill session closes (no listening). Read by the skill as APL_DISPLAY_ONLY.
+APL_DISPLAY_ONLY="$(/app/venv/bin/python -c 'import json;print(str(json.load(open("/data/options.json")).get("apl_display_only", True)).lower())' 2>/dev/null || echo true)"
+export APL_DISPLAY_ONLY
+echo "[fork] apl_display_only = ${APL_DISPLAY_ONLY}"
+
 # The upstream application stores the current stream in memory, so it must run
 # as a single worker to keep push and playback requests consistent.
 exec /app/venv/bin/gunicorn --config /app/gunicorn.conf.py --workers 1 --worker-class gthread --threads 8 --access-logfile - --error-logfile - --capture-output app:app --chdir /app/src --bind "0.0.0.0:${PORT}" --bind "0.0.0.0:8099"

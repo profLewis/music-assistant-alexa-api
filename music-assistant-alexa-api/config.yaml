@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Music Assistant Alexa API add-on (profLewis fork)
-version: "1.3.6-pl.5"
+version: "1.3.6-pl.6"
 slug: ma_alexa_api
 description: Music Assistant Alexa API add-on
 url: "https://github.com/profLewis/music-assistant-alexa-api/tree/proflewis/music-assistant-alexa-api"
@@ -21,6 +21,7 @@ options:
   skip_url_validation: false
   ma_api_url: ""
   enable_apl: false
+  apl_display_only: true
 schema:
   ma_hostname: "str"
   skill_hostname: "str?"
@@ -31,6 +32,7 @@ schema:
   ma_api_url: "str?"
   ma_api_token: "password?"
   enable_apl: "bool"
+  apl_display_only: "bool?"
   lwa_client_id: "str?"
   lwa_client_secret: "password?"
   skill_certificate_type: "list(Trusted|Wildcard|SelfSigned)?"
