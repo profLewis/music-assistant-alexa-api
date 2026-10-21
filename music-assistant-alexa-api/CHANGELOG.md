@@ -1,3 +1,7 @@
+## 1.3.6-pl.13 (profLewis fork)
+
+- Cat Ballou lists the Echo screens it supports, so Amazon sends it to the Echo Show.
+
 ## 1.3.6-pl.12 (profLewis fork)
 
 - Cat Ballou uses the same endpoint certificate type as the working music skill; a check page shows both skills as Amazon has them.
