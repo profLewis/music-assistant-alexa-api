@@ -1,3 +1,7 @@
+## 1.3.6-pl.19 (profLewis fork)
+
+- Cat Ballou signs the Echo Show in with a one-time code each time it opens (set catballou_ha_password to the Echo Show user's password); the Show's browser keeps no stored sign-in.
+
 ## 1.3.6-pl.18 (profLewis fork)
 
 - Cat Ballou opens the whole control panel on the Echo Show (web app), signed in as the Echo Show user (catballou_ha_token). Heating settings page.
