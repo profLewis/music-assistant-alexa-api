@@ -1,3 +1,7 @@
+## 1.3.6-pl.22 (profLewis fork)
+
+- The house skill is now Peach Banana ("Alexa, open Peach Banana").
+
 ## 1.3.6-pl.21 (profLewis fork)
 
 - The house skill is now Apple Banana ("Alexa, open Apple Banana").
