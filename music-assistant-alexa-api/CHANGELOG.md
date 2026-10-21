@@ -1,3 +1,7 @@
+## 1.3.6-pl.10 (profLewis fork)
+
+- MyHouse: the house on the Echo Show ("Alexa, open my house") - Home, Lights, Heating and Music screens with touch controls and voice commands, as its own Alexa skill at /myhouse. Needs Home Assistant API access (homeassistant_api). Create it at Amazon with POST /myhouse/deploy.
+
 ## 1.3.6-pl.9 (profLewis fork)
 
 - Screen Echoes (display-only page): a pause - including the one Music Assistant sends - is now a plain stop that ends the Alexa session, so the Echo no longer sits listening for a reply afterwards. A display event never reopens the session. (skill fad7350)
