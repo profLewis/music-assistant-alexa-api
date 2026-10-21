@@ -1,3 +1,7 @@
+## 1.3.6-pl.15 (profLewis fork)
+
+- Cat Ballou simulator check uses Amazon v2 API.
+
 ## 1.3.6-pl.14 (profLewis fork)
 
 - Cat Ballou: a simulator check for diagnosing launches.
