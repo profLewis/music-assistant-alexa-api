@@ -1,3 +1,7 @@
+## 1.3.6-pl.24 (profLewis fork)
+
+- The control panel inside the music skill on an Echo Show ("Alexa, open music assistant"), so music and screen are one skill; opening it (or Peach Banana) stops the music. Option-free: MUSIC_SCREEN_APP=false turns it off.
+
 ## 1.3.6-pl.23 (profLewis fork)
 
 - Peach Banana widgets (Central Control, Peach Banana): set myhouse_client_id / myhouse_client_secret (the skill's Alexa Client Id / Secret) for the live reading.
