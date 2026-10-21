@@ -1,3 +1,7 @@
+## 1.3.6-pl.23 (profLewis fork)
+
+- Peach Banana widgets (Central Control, Peach Banana): set myhouse_client_id / myhouse_client_secret (the skill's Alexa Client Id / Secret) for the live reading.
+
 ## 1.3.6-pl.22 (profLewis fork)
 
 - The house skill is now Peach Banana ("Alexa, open Peach Banana").
