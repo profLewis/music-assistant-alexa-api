@@ -1,3 +1,7 @@
+## 1.3.6-pl.20 (profLewis fork)
+
+- Cat Ballou: fresh start page each time.
+
 ## 1.3.6-pl.19 (profLewis fork)
 
 - Cat Ballou signs the Echo Show in with a one-time code each time it opens (set catballou_ha_password to the Echo Show user's password); the Show's browser keeps no stored sign-in.
