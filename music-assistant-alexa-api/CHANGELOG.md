@@ -1,3 +1,7 @@
+## 1.3.6-pl.21 (profLewis fork)
+
+- The house skill is now Apple Banana ("Alexa, open Apple Banana").
+
 ## 1.3.6-pl.20 (profLewis fork)
 
 - Cat Ballou: fresh start page each time.
