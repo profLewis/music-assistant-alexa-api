@@ -1,3 +1,7 @@
+## 1.3.6-pl.12 (profLewis fork)
+
+- Cat Ballou uses the same endpoint certificate type as the working music skill; a check page shows both skills as Amazon has them.
+
 ## 1.3.6-pl.11 (profLewis fork)
 
 - The house skill is now called Cat Ballou ("Alexa, open Cat Ballou"): Alexa took "my house" as a device or area.
