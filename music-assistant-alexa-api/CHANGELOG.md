@@ -1,3 +1,7 @@
+## 1.3.6-pl.25 (profLewis fork)
+
+- Music played to an Echo Show opens the control panel on its Music page, which then starts the stream from inside it.
+
 ## 1.3.6-pl.24 (profLewis fork)
 
 - The control panel inside the music skill on an Echo Show ("Alexa, open music assistant"), so music and screen are one skill; opening it (or Peach Banana) stops the music. Option-free: MUSIC_SCREEN_APP=false turns it off.
