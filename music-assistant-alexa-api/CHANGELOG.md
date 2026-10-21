@@ -1,3 +1,7 @@
+## 1.3.6-pl.16 (profLewis fork)
+
+- Cat Ballou now uses the same skill address as the music skill (requests are told apart by skill id).
+
 ## 1.3.6-pl.15 (profLewis fork)
 
 - Cat Ballou simulator check uses Amazon v2 API.
