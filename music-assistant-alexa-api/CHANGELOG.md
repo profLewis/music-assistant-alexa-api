@@ -1,3 +1,7 @@
+## 1.3.6-pl.26 (profLewis fork)
+
+- The control panel on an Echo Show plays the music itself (Alexa froze it when its own player started).
+
 ## 1.3.6-pl.25 (profLewis fork)
 
 - Music played to an Echo Show opens the control panel on its Music page, which then starts the stream from inside it.
