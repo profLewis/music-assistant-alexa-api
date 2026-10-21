@@ -1,3 +1,7 @@
+## 1.3.6-pl.17 (profLewis fork)
+
+- Cat Ballou copies the music skill's per-region endpoints and Wildcard certificate setting, so Amazon calls it.
+
 ## 1.3.6-pl.16 (profLewis fork)
 
 - Cat Ballou now uses the same skill address as the music skill (requests are told apart by skill id).
