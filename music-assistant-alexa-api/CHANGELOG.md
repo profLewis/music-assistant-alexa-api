@@ -1,3 +1,7 @@
+## 1.3.6-pl.11 (profLewis fork)
+
+- The house skill is now called Cat Ballou ("Alexa, open Cat Ballou"): Alexa took "my house" as a device or area.
+
 ## 1.3.6-pl.10 (profLewis fork)
 
 - MyHouse: the house on the Echo Show ("Alexa, open my house") - Home, Lights, Heating and Music screens with touch controls and voice commands, as its own Alexa skill at /myhouse. Needs Home Assistant API access (homeassistant_api). Create it at Amazon with POST /myhouse/deploy.
