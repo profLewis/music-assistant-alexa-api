@@ -1,3 +1,7 @@
+## 1.3.6-pl.18 (profLewis fork)
+
+- Cat Ballou opens the whole control panel on the Echo Show (web app), signed in as the Echo Show user (catballou_ha_token). Heating settings page.
+
 ## 1.3.6-pl.17 (profLewis fork)
 
 - Cat Ballou copies the music skill's per-region endpoints and Wildcard certificate setting, so Amazon calls it.
