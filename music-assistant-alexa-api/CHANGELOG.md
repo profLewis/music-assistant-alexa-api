@@ -1,3 +1,7 @@
+## 1.3.6-pl.14 (profLewis fork)
+
+- Cat Ballou: a simulator check for diagnosing launches.
+
 ## 1.3.6-pl.13 (profLewis fork)
 
 - Cat Ballou lists the Echo screens it supports, so Amazon sends it to the Echo Show.
