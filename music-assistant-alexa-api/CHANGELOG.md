@@ -1,3 +1,7 @@
+## 1.3.6-pl.9 (profLewis fork)
+
+- Screen Echoes (display-only page): a pause - including the one Music Assistant sends - is now a plain stop that ends the Alexa session, so the Echo no longer sits listening for a reply afterwards. A display event never reopens the session. (skill fad7350)
+
 ## 1.3.6-pl.8 (profLewis fork)
 - Display-only page timer uses handleTick (keeps running after the session closes).
 
