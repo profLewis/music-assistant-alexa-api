@@ -1,3 +1,7 @@
+## 1.3.6-pl.28 (profLewis fork)
+
+- Echo Show: the control panel can ask to be opened again (its screensaver does, a little before Alexa's 30-minute idle limit would close it and show the Show's own slideshow).
+
 ## 1.3.6-pl.27 (profLewis fork)
 
 - Echo Show: pausing or stopping from the control panel no longer drops the Show back to Alexa's home screen - the panel opens again at once, paused, on its Music page.
