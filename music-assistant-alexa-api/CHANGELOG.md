@@ -1,3 +1,7 @@
+## 1.3.6-pl.27 (profLewis fork)
+
+- Echo Show: pausing or stopping from the control panel no longer drops the Show back to Alexa's home screen - the panel opens again at once, paused, on its Music page.
+
 ## 1.3.6-pl.26 (profLewis fork)
 
 - The control panel on an Echo Show plays the music itself (Alexa froze it when its own player started).
