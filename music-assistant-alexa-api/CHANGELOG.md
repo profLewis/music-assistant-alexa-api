@@ -1,3 +1,7 @@
+## 1.3.6-pl.29 (profLewis fork)
+
+- Peach Banana: with the panel open, alarms and timers ("set an alarm for 7", "set a 10 minute timer", "cancel my alarm") go to Alexa and the panel comes back after; anything else it doesn't know closes the panel so Alexa can hear it said again (Home Assistant's script.peach_banana_handoff reopens it). Needs the voice model updated: POST /myhouse/deploy.
+
 ## 1.3.6-pl.28 (profLewis fork)
 
 - Echo Show: the control panel can ask to be opened again (its screensaver does, a little before Alexa's 30-minute idle limit would close it and show the Show's own slideshow).
