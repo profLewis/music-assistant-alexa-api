@@ -1,3 +1,7 @@
+## 1.3.6-pl.30 (profLewis fork)
+
+- Echo Show: music played to a Show whose control panel isn't really up no longer goes silent. The skill now notices when the panel closes, and if a music hand-off's panel never comes up it lets Alexa's own player play on that Show for 15 minutes (each close is logged with Alexa's reason).
+
 ## 1.3.6-pl.29 (profLewis fork)
 
 - Peach Banana: with the panel open, alarms and timers ("set an alarm for 7", "set a 10 minute timer", "cancel my alarm") go to Alexa and the panel comes back after; anything else it doesn't know closes the panel so Alexa can hear it said again (Home Assistant's script.peach_banana_handoff reopens it). Needs the voice model updated: POST /myhouse/deploy.
