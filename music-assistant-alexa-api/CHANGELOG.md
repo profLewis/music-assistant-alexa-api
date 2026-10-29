@@ -1,3 +1,7 @@
+## 1.3.6-pl.33 (profLewis fork)
+
+- Echo Show: music plays through Alexa's own player, as on any other Echo - not inside the control panel - so a song can't be playing in both at once. (MUSIC_SCREEN_PLAY=true brings the in-panel music back.)
+
 ## 1.3.6-pl.32 (profLewis fork)
 
 - Echo Show: with a panel open, "turn the volume down / up / to 4" sets the Echo's own volume (both skills), and in the music skill's panel alarms, timers and anything it doesn't recognise go to Alexa, then the panel comes back with the music playing on. Needs the voice models updated: POST /myhouse/deploy and POST /myhouse/music-volume.
