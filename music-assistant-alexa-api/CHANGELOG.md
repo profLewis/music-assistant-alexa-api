@@ -1,3 +1,7 @@
+## 1.3.6-pl.34
+
+- Peach Banana: timers and alarms set, read and cancelled from inside the skill (skill 3ef211c).
+
 ## 1.3.6-pl.33 (profLewis fork)
 
 - Echo Show: music plays through Alexa's own player, as on any other Echo - not inside the control panel - so a song can't be playing in both at once. (MUSIC_SCREEN_PLAY=true brings the in-panel music back.)
