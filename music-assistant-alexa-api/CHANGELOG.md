@@ -1,3 +1,7 @@
+## 1.3.6-pl.35
+
+- Skill 66fa5b3: Peach Banana passes free questions to the AI helper (script.ai_ask), so the panel and music stay.
+
 ## 1.3.6-pl.34
 
 - Peach Banana: timers and alarms set, read and cancelled from inside the skill (skill 3ef211c).
