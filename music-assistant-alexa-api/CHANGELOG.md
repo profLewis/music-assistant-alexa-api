@@ -1,3 +1,7 @@
+## 1.3.6-pl.41
+
+- Skill 2d2a9e0: play this by voice; pause, resume and stop act on the music.
+
 ## 1.3.6-pl.40
 
 - Skill b769dfa: "not supported on this device" after a restart fixed; timers remember their length.
