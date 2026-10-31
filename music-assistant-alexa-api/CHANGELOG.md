@@ -1,3 +1,7 @@
+## 1.3.6-pl.38
+
+- Skill 5dbc731: a much wider range of phrases goes to the AI helper before Alexa.
+
 ## 1.3.6-pl.37
 
 - Skill d748960: more openings (what does, is, can, do...) go to the AI helper.
