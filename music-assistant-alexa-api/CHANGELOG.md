@@ -1,3 +1,7 @@
+## 1.3.6-pl.37
+
+- Skill d748960: more openings (what does, is, can, do...) go to the AI helper.
+
 ## 1.3.6-pl.36
 
 - Skill e25dfb4: follow-up questions continue the same AI conversation.
