@@ -1,3 +1,7 @@
+## 1.3.6-pl.36
+
+- Skill e25dfb4: follow-up questions continue the same AI conversation.
+
 ## 1.3.6-pl.35
 
 - Skill 66fa5b3: Peach Banana passes free questions to the AI helper (script.ai_ask), so the panel and music stay.
