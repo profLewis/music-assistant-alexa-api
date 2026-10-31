@@ -1,3 +1,7 @@
+## 1.3.6-pl.40
+
+- Skill b769dfa: "not supported on this device" after a restart fixed; timers remember their length.
+
 ## 1.3.6-pl.39
 
 - Skill 1b4a512: timers and alarms kept by the house, no Alexa permission needed.
