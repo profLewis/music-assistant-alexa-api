@@ -1,3 +1,6 @@
+## 1.3.6-pl.45
+- Peach Banana: a short listening window after it answers, only while nothing plays.
+
 ## 1.3.6-pl.44
 - Peach Banana: never covers the full panel with the old built-in screens.
 
