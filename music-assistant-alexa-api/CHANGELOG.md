@@ -1,3 +1,6 @@
+## 1.3.6-pl.43
+- Peach Banana: "turn on radio 4", "switch on the radio", "tune in to five live", "turn on the archers" play like "play …".
+
 ## 1.3.6-pl.42
 - Peach Banana: "good morning" (the time, then BBC Radio 4 on the panel, through the house).
 
