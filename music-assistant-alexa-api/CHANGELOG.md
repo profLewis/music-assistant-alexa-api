@@ -1,3 +1,6 @@
+## 1.3.6-pl.44
+- Peach Banana: never covers the full panel with the old built-in screens.
+
 ## 1.3.6-pl.43
 - Peach Banana: "turn on radio 4", "switch on the radio", "tune in to five live", "turn on the archers" play like "play …".
 
