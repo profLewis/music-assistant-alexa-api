@@ -1,3 +1,6 @@
+## 1.3.6-pl.42
+- Peach Banana: "good morning" (the time, then BBC Radio 4 on the panel, through the house).
+
 ## 1.3.6-pl.41
 
 - Skill 2d2a9e0: play this by voice; pause, resume and stop act on the music.
