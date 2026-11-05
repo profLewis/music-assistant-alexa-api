@@ -1,3 +1,7 @@
+## 1.3.6-pl.49
+
+- Peach Banana: asked to play while its panel is shut (the Show), it opens the panel and the house plays once the panel speaker is there - for the "Peach Banana: ..." Alexa routines; other Echoes play on themselves; "show apesma".
+
 ## 1.3.6-pl.48
 
 - Peach Banana: "ask peach banana to play radio four" said while the panel is open plays it (it went to the AI helper as a question).
