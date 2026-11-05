@@ -1,3 +1,7 @@
+## 1.3.6-pl.47
+
+- Peach Banana: no listening window after an answer that starts music ("play radio four" with the panel open was rejected by Alexa); the skill journal now covers Peach Banana too.
+
 ## 1.3.6-pl.46
 
 - Skill journal: every request and answer is noted in Home Assistant (event `skill_journal`), with Alexa's own error message when it rejects an answer - to find why "turn on radio 4" first gets "there was a problem with the requested skill's response".
