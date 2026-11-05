@@ -1,3 +1,7 @@
+## 1.3.6-pl.50
+
+- Peach Banana: asked by an Echo without the panel, the house plays it on that Echo.
+
 ## 1.3.6-pl.49
 
 - Peach Banana: asked to play while its panel is shut (the Show), it opens the panel and the house plays once the panel speaker is there - for the "Peach Banana: ..." Alexa routines; other Echoes play on themselves; "show apesma".
