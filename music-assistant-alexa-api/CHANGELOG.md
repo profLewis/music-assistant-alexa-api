@@ -1,3 +1,7 @@
+## 1.3.6-pl.52
+
+- Peach Banana: a station name on its own ("bbc radio four") is the radio.
+
 ## 1.3.6-pl.51
 
 - Peach Banana: BBC stations by name, books (my book / read <title>) and podcasts - so the open panel wins over Alexa's own players.
