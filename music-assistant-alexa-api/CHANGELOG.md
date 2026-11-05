@@ -1,3 +1,7 @@
+## 1.3.6-pl.51
+
+- Peach Banana: BBC stations by name, books (my book / read <title>) and podcasts - so the open panel wins over Alexa's own players.
+
 ## 1.3.6-pl.50
 
 - Peach Banana: asked by an Echo without the panel, the house plays it on that Echo.
