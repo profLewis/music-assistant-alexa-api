@@ -1,3 +1,7 @@
+## 1.3.6-pl.53
+
+- Peach Banana: "load …" (ready to play, paused) and "unload"; shuffle / repeat are player controls, not searches.
+
 ## 1.3.6-pl.52
 
 - Peach Banana: a station name on its own ("bbc radio four") is the radio.
