@@ -1,3 +1,7 @@
+## 1.3.6-pl.48
+
+- Peach Banana: "ask peach banana to play radio four" said while the panel is open plays it (it went to the AI helper as a question).
+
 ## 1.3.6-pl.47
 
 - Peach Banana: no listening window after an answer that starts music ("play radio four" with the panel open was rejected by Alexa); the skill journal now covers Peach Banana too.
