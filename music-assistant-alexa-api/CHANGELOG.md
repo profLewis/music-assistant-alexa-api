@@ -1,6 +1,6 @@
 ## 1.3.6-pl.53
 
-- Peach Banana: "load …" (ready to play, paused) and "unload"; shuffle / repeat are player controls, not searches.
+- Peach Banana: "load …" (ready to play, paused) and "unload"; shuffle / repeat are player controls, not searches (a bare "shuffle" flips it).
 
 ## 1.3.6-pl.52
 
