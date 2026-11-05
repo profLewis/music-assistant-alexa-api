@@ -1,3 +1,7 @@
+## 1.3.6-pl.46
+
+- Skill journal: every request and answer is noted in Home Assistant (event `skill_journal`), with Alexa's own error message when it rejects an answer - to find why "turn on radio 4" first gets "there was a problem with the requested skill's response".
+
 ## 1.3.6-pl.45
 - Peach Banana: a short listening window after it answers, only while nothing plays; stop / pause also work on the rewound radio.
 
