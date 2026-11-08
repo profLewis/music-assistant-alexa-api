@@ -1,3 +1,7 @@
+## 1.3.6-pl.60
+
+- Peach Banana: Back garden comes after the Kitchen in the room order (lights screen). No voice model change.
+
 ## 1.3.6-pl.59
 
 - Peach Banana: the lights and heating screens list the rooms in the house's order (Sian study after the downstairs loo, Upper hallway after the Bedroom, Beau bedroom before Lewis study); "beau bedroom lights" is Beau's room, not the Bedroom. No voice model change.
