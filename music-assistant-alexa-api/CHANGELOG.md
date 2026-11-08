@@ -1,3 +1,7 @@
+## 1.3.6-pl.59
+
+- Peach Banana: the lights and heating screens list the rooms in the house's order (Sian study after the downstairs loo, Upper hallway after the Bedroom, Beau bedroom before Lewis study); "beau bedroom lights" is Beau's room, not the Bedroom. No voice model change.
+
 ## 1.3.6-pl.58
 
 - Peach Banana: the hallway is two rooms, Lower hallway and Upper hallway (each its own lights, radiator and thermometer). "Hall", "downstairs hall", "front hall" = Lower; "landing", "upstairs hall" = Upper; "hallway" alone = both. The voice model's ROOM values changed: redeploy the model.
