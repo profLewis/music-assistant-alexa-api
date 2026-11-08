@@ -1,3 +1,7 @@
+## 1.3.6-pl.57
+
+- Peach Banana: a number on its own (9-40, halves too: "twenty point five", "nineteen and a half") sets the house target, clamped to the radiators' limits, and says what it set.
+
 ## 1.3.6-pl.53
 
 - Peach Banana: "load …" (ready to play, paused) and "unload"; shuffle / repeat are player controls, not searches (a bare "shuffle" flips it).
