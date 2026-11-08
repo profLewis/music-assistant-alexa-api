@@ -1,3 +1,7 @@
+## 1.3.6-pl.58
+
+- Peach Banana: the hallway is two rooms, Lower hallway and Upper hallway (each its own lights, radiator and thermometer). "Hall", "downstairs hall", "front hall" = Lower; "landing", "upstairs hall" = Upper; "hallway" alone = both. The voice model's ROOM values changed: redeploy the model.
+
 ## 1.3.6-pl.57
 
 - Peach Banana: a number on its own (9-40, halves too: "twenty point five", "nineteen and a half") sets the house target, clamped to the radiators' limits, and says what it set.
