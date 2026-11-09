@@ -1,3 +1,7 @@
+## 1.3.6-pl.62
+
+- Peach Banana: one room warmer or cooler by voice - "boost the kitchen", "increase the temperature in the living room by two degrees", "make Beau's room warmer for an hour", "turn the heating down in the bedroom by one degree for thirty minutes". By 1 degree unless said (up to 4), for the Boost length unless said; Home Assistant's script.heating_room_bump does it (that room's radiators only, a timed boost; the house target is not changed) and words the answer. Inside the panel the answer is said and the panel stays; "Alexa, ask Peach Banana to ..." on another Echo is a one-shot. Voice model changed (BoostIntent slots by / dur / way, HEAT_WAY type, room synonyms): redeploy the model.
+
 ## 1.3.6-pl.61
 
 - Peach Banana: "Alexa, stop" (and cancel, pause, "be quiet", "shut up", "that's enough") no longer closes it. It stops what the house is sounding on the Moon - a Peach Banana timer or alarm first (Home Assistant script.peach_hush), else the music or radio (paused), else the screen speaker - and otherwise does nothing; the panel stays. Only "close Peach Banana" / "quit" ends it. Journal line stop-trapped. Voice model changed (QuietIntent, ExitIntent): redeploy the model.
