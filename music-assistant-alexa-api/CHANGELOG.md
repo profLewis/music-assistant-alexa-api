@@ -1,3 +1,7 @@
+## 1.3.6-pl.61
+
+- Peach Banana: "Alexa, stop" (and cancel, pause, "be quiet", "shut up", "that's enough") no longer closes it. It stops what the house is sounding on the Moon - a Peach Banana timer or alarm first (Home Assistant script.peach_hush), else the music or radio (paused), else the screen speaker - and otherwise does nothing; the panel stays. Only "close Peach Banana" / "quit" ends it. Journal line stop-trapped. Voice model changed (QuietIntent, ExitIntent): redeploy the model.
+
 ## 1.3.6-pl.60
 
 - Peach Banana: Back garden comes after the Kitchen in the room order (lights screen). No voice model change.
