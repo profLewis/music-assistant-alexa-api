@@ -1,3 +1,7 @@
+## 1.3.6-pl.64
+
+- Peach Banana: the Hallway is one room again (skill ac16893) - both radiators, all hallway lights, its own temperature; "landing", "hall", "upper/lower hallway" all mean it. The voice model's room list changed: redeploy it when convenient (closes the Moon's panel ~30 s); until then the old names still resolve to the Hallway.
+
 ## 1.3.6-pl.63
 
 - Peach Banana: "Alexa, continue" and "unpause (the music / the radio)" resume the music (skill 05a8c3e).
