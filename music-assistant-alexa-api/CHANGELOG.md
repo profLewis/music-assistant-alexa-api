@@ -1,3 +1,7 @@
+## 1.3.6-pl.63
+
+- Peach Banana: "Alexa, continue" and "unpause (the music / the radio)" resume the music (skill 05a8c3e).
+
 ## 1.3.6-pl.62
 
 - Peach Banana: one room warmer or cooler by voice - "boost the kitchen", "increase the temperature in the living room by two degrees", "make Beau's room warmer for an hour", "turn the heating down in the bedroom by one degree for thirty minutes". By 1 degree unless said (up to 4), for the Boost length unless said; Home Assistant's script.heating_room_bump does it (that room's radiators only, a timed boost; the house target is not changed) and words the answer. Inside the panel the answer is said and the panel stays; "Alexa, ask Peach Banana to ..." on another Echo is a one-shot. Voice model changed (BoostIntent slots by / dur / way, HEAT_WAY type, room synonyms): redeploy the model.
