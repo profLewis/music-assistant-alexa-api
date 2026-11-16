@@ -3,12 +3,28 @@
 # 3.12 environment (with the verifier/certvalidator patches applied), ASK CLI,
 # the skill code and the assets. This layer adds the add-on runtime glue.
 # The tag+digest here and in build.yaml must stay identical — see AGENTS.md.
-ARG BUILD_FROM=ghcr.io/timlaing/music-assistant-skill:v1.6.10@sha256:39cf27f294051f9369bb920f7f157da679fdd85d02d1bfedd411df8316ab3794
-FROM $BUILD_FROM
+# profLewis fork: the base is named directly (not via BUILD_FROM) - a local Supervisor build passes its own default
+# (Alpine) base as BUILD_FROM, which has none of the skill image's /app/venv, so the build failed at the pip step.
+FROM ghcr.io/timlaing/music-assistant-skill:v1.6.10@sha256:39cf27f294051f9369bb920f7f157da679fdd85d02d1bfedd411df8316ab3794
 
 # Serve with gunicorn instead of the skill image's Flask dev server, using the
 # Home Assistant ingress log format from gunicorn.conf.py.
 RUN /app/venv/bin/pip install --no-cache-dir gunicorn==26.2.0
+
+# profLewis fork: swap the image's skill code (/app/src and /app/app, both copies of the skill repo's app/) for
+# the fork's, pinned by commit. The fork is rebased on the same v1.6.10 the image was built from, and its
+# golden-response tests hold it to upstream's exact responses except for documented, deliberate changes.
+ARG SKILL_REPO=https://github.com/profLewis/music-assistant-alexa-skill
+ARG SKILL_REF=b3f7e8125e33bc6826d5beff9823aac5213be027
+RUN set -eu; \
+    tmp="$(mktemp -d)"; \
+    curl -fsSL "${SKILL_REPO}/archive/${SKILL_REF}.tar.gz" | tar -xz -C "$tmp" --strip-components=1; \
+    test -f "$tmp/app/app.py"; \
+    rm -rf /app/src /app/app; \
+    cp -a "$tmp/app" /app/src; \
+    cp -a "$tmp/app" /app/app; \
+    echo "${SKILL_REF}" > /app/SKILL_REF; \
+    rm -rf "$tmp"
 
 # Add-on service definition. The skill image is Ubuntu-based and has no Home
 # Assistant base s6-overlay/bashio, so the service is a plain entrypoint
