@@ -1,5 +1,14 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.3.10-pl.1
+
+- The fork is now on upstream add-on 1.3.10 / skill v1.6.10 (was 1.3.6 / v1.4.1). Skill a0aeaeb (branch proflewis-rebase-1.6.10): every fork change replayed onto v1.6.10, plus "alarm or timer".
+- From upstream (1.3.7 .. 1.3.10, skill 1.5.0 .. 1.6.10): the four-step Setup wizard and redesigned status pages; diagnostics download and the read-only Music Assistant channel checks (V1-V13) incl. the invocation-name check; reachability checks with the real Host header behind a reverse proxy (SNI/Host fix) and an optional external check (check-host.net); only the deployed skill may call the endpoint; one stream per Echo (upstream's version of the fork's change, issue #33); spoken music selection, queue commands and a playback-position endpoint (en-US voice model only); invocation "music assistant" in every locale.
+- Fork rules on top: Peach Banana's own skill id is let through upstream's skill-id check (it shares the endpoint); an install whose deployment state has a skill id but no recorded verification keeps working for that skill id only (a warning in the log) instead of answering 503.
+- Peach Banana - alarm or timer are one thing: "set an alarm for 19 minutes" sets a TIMER (a length ending within 3 hours), "a timer for 6:30" sets an ALARM (a clock time); "change my alarm/timer", cancel and stop find the other kind when there is none of the one said; "how long is left" lists both. Voice model changed (342 -> 345 of 350 intents + slots): redeploy it (POST :5000/myhouse/deploy).
+- The Peach Banana options catballou_ha_url / catballou_ha_username have no built-in defaults any more (an installed add-on keeps the values it has).
+- Rollback: tag pl.65-backup (1.3.6-pl.65) - see FORK.md.
+
 ## 1.3.10
 
 - Update the bundled skill to the cosign-signed `v1.6.10` image.

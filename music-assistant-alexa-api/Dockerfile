@@ -15,7 +15,7 @@ RUN /app/venv/bin/pip install --no-cache-dir gunicorn==26.2.0
 # the fork's, pinned by commit. The fork is rebased on the same v1.6.10 the image was built from, and its
 # golden-response tests hold it to upstream's exact responses except for documented, deliberate changes.
 ARG SKILL_REPO=https://github.com/profLewis/music-assistant-alexa-skill
-ARG SKILL_REF=b3f7e8125e33bc6826d5beff9823aac5213be027
+ARG SKILL_REF=a0aeaebb86175e830210996d8120d2eb1fe83088
 RUN set -eu; \
     tmp="$(mktemp -d)"; \
     curl -fsSL "${SKILL_REPO}/archive/${SKILL_REF}.tar.gz" | tar -xz -C "$tmp" --strip-components=1; \

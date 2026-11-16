@@ -16,3 +16,11 @@ Install: Settings -> Add-ons -> Add-on Store -> Repositories -> `https://github.
 (the store uses the default branch, so `proflewis` is set as default on the fork).
 
 To ship a skill change: commit on the skill fork, then bump `SKILL_REF` here and the `-pl.N` version.
+
+## Rollback to 1.3.6-pl.65
+
+The last 1.3.6-based release is tagged `pl.65-backup` (add-on commit 99d1857, skill b3f7e81; SHAs after the 16 Nov 2026 history clean-up). To go back without a
+force-push: on `proflewis` make a new commit whose tree is the tag's (`git checkout pl.65-backup -- .` from the repo
+root, then set `version:` above the current one, e.g. `1.3.6-pl.66-rollback`, because Supervisor only offers a higher
+version), push, POST supervisor/store/reload, `ha apps update 1c859820_ma_alexa_api`, reload the hassio config entry.
+Peach Banana's voice model: POST :5000/myhouse/deploy again from the rolled-back add-on (back to 342 intents + slots).
