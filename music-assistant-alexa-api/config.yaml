@@ -8,6 +8,9 @@ arch:
   - aarch64
   - amd64
 init: false
+# /share is mapped only for the one-time settings import from the original add-on (see entrypoint.sh).
+map:
+  - share:rw
 # Migration-only compatibility: edit application settings in ingress Setup.
 # Preserve legacy values through the first migration release.
 options:
@@ -18,6 +21,7 @@ options:
   skip_url_validation: false
   ma_api_url: ""
   enable_apl: false
+  apl_display_only: true
 schema:
   ma_hostname: "str"
   skill_hostname: "str?"
@@ -28,6 +32,16 @@ schema:
   ma_api_url: "str?"
   ma_api_token: "password?"
   enable_apl: "bool"
+  apl_display_only: "bool?"
+  # profLewis fork - Cat Ballou (the house on the Echo Show): the Echo Show user's long-lived Home Assistant token,
+  # the Home Assistant address the Show opens, and the skill's own Alexa Client Id / Secret (widgets' live data)
+  catballou_ha_username: "str?"
+  catballou_ha_password: "password?"
+  catballou_ha_internal: "str?"
+  catballou_ha_token: "password?"
+  catballou_ha_url: "str?"
+  myhouse_client_id: "str?"
+  myhouse_client_secret: "password?"
   lwa_client_id: "str?"
   lwa_client_secret: "password?"
   skill_certificate_type: "list(Trusted|Wildcard|SelfSigned)?"
@@ -36,6 +50,8 @@ ingress: true
 ingress_entry: status
 panel_icon: mdi:music
 homeassistant: 2025.12.5
+# profLewis fork: MyHouse reads and controls the house through the Supervisor's Home Assistant API
+homeassistant_api: true
 ports:
   5000/tcp: 5000
 ports_description:
