@@ -47,3 +47,28 @@ configuration:
     name: Skill Certificate Type (migration only)
     description: Legacy upgrade import only. Edit this setting in Web UI → Setup.
       After initial migration, changing this legacy field has no effect.
+  # profLewis fork options
+  apl_display_only:
+    name: APL display only (fork)
+    description: With APL on, Alexa's own player plays and the page is display-only, so the session closes (no listening).
+  catballou_ha_username:
+    name: Peach Banana - Home Assistant user (fork)
+    description: The Echo Show user Peach Banana signs in as.
+  catballou_ha_password:
+    name: Peach Banana - Home Assistant password (fork)
+    description: That user's password (a one-time sign-in code is made from it each time the panel opens).
+  catballou_ha_internal:
+    name: Peach Banana - internal Home Assistant address (fork)
+    description: Where the add-on reaches Home Assistant for the sign-in (default http://homeassistant:8123).
+  catballou_ha_token:
+    name: Peach Banana - Home Assistant token (fork, legacy)
+    description: Long-lived token (older sign-in method).
+  catballou_ha_url:
+    name: Peach Banana - Home Assistant address the Show opens (fork)
+    description: The public Home Assistant address the Echo Show loads the control panel from.
+  myhouse_client_id:
+    name: Peach Banana - Alexa client id (fork)
+    description: The house skill's own Alexa client id (widgets' live data).
+  myhouse_client_secret:
+    name: Peach Banana - Alexa client secret (fork)
+    description: The house skill's own Alexa client secret (widgets' live data).

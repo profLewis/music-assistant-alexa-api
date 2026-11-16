@@ -6,6 +6,19 @@ ROOT = Path(__file__).resolve().parents[1]
 ADDON = ROOT / "music-assistant-alexa-api"
 
 
+# profLewis fork: its own add-on options (see FORK.md)
+FORK_OPTIONS = {
+    "apl_display_only",
+    "catballou_ha_username",
+    "catballou_ha_password",
+    "catballou_ha_internal",
+    "catballou_ha_token",
+    "catballou_ha_url",
+    "myhouse_client_id",
+    "myhouse_client_secret",
+}
+
+
 def test_addon_option_contract():
     config = yaml.safe_load((ADDON / "config.yaml").read_text())
     labels = yaml.safe_load((ADDON / "translations/en.yaml").read_text())[
@@ -38,7 +51,8 @@ def test_runtime_is_pinned():
     )
     assert len(set(build["build_from"].values())) == 1
     dockerfile = (ADDON / "Dockerfile").read_text()
-    assert f"ARG BUILD_FROM={build['build_from']['aarch64']}" in dockerfile
+    # profLewis fork: the base is named directly in FROM (a local Supervisor build passes its own BUILD_FROM)
+    assert f"FROM {build['build_from']['aarch64']}" in dockerfile
     # The add-on layer only adds the server on top of the skill image.
     assert "gunicorn==26.2.0" in dockerfile
 
@@ -58,7 +72,7 @@ def test_personal_deployment_option_and_logging_contract():
         "lwa_client_secret",
         "locale",
         "skip_url_validation",
-    }
+    } | FORK_OPTIONS
     assert config["ingress"]
     assert config.get("ingress_port", 8099) == 8099
     assert config["ingress_entry"] == "status"
