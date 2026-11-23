@@ -1,3 +1,7 @@
+## 1.3.6-pl.66
+
+- Peach Banana: asked on the Moon = the Moon - play, pause, stop and resume act on the Moon unless the chosen speaker already is the Moon (then its group too) - skill aad0bf8.
+
 ## 1.3.6-pl.65
 
 - Peach Banana tells the house straight away when its panel closes, so it is reopened in seconds (fewer adverts on the Moon) - skill 395bcd6.
